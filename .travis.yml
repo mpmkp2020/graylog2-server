@@ -4,6 +4,7 @@ language: java
 arch: arm64
 jdk:
   - oraclejdk11
+  - maven
   #- oraclejdk8
 cache:
   directories:
