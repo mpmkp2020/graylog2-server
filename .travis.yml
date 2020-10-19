@@ -3,7 +3,7 @@ dist: trusty
 language: java
 arch: arm64
 jdk:
-  - openjdk8
+  - oraclejdk11
   #- oraclejdk8
 cache:
   directories:
