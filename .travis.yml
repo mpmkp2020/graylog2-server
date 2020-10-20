@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 language: java
-arch: arm64
+arch: amd64
 jdk:
   - oraclejdk8
   #- oraclejdk8
