@@ -21,10 +21,12 @@ notifications:
         g6Gpj2n1Bl6hIwWlywEkw8wRjpN2XuFsxFr9KQu/p7mRLYPdF3V5qQPVLBRd
         KvkjCIM7gZy2DTRNUooQPXdJB3npbnlbQn4jNWqA7/fp434Sw5sdfSUMawGr
         XvemLvn0KxQxCO9GfN3wfmYxEWJwXO36Q29BnRWWgMQOXpFFD8A=
-before_script:
+before_install:
   - sudo apt-get -y install openjdk-8-jdk
   - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64
   - export PATH=$PATH:$JAVA_HOME/bin
+
+before_script:
   - sudo sysctl -w vm.max_map_count=262144
 script:
   - mvn -B package
