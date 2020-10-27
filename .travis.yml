@@ -26,7 +26,7 @@ notifications:
         XvemLvn0KxQxCO9GfN3wfmYxEWJwXO36Q29BnRWWgMQOXpFFD8A=
 before_install:
   - git clone https://github.com/testcontainers/moby-ryuk
-  - cd moby-ryuk && docker build -t testcontainers/ryuk@0.3.0 . && cd ..
+  - cd moby-ryuk && docker build -t testcontainers/ryuk:0.3.0 . && cd ..
   - sudo apt-get -y install openjdk-8-jdk
   - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64
   - export PATH=$PATH:$JAVA_HOME/bin
